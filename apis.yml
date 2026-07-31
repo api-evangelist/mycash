@@ -1,7 +1,26 @@
 aid: mycash
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mycash.png
 name: MyCash
-description: MyCash is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: MyCash (operated by IN REMIT PTE LTD, Singapore) is a mobile-only cross-border
+  remittance service built for migrant workers. Through the MyCash Money mobile app, users
+  send money home instantly, reload / top up mobile airtime, and pay bills across supported
+  corridors without needing a traditional bank account. The service targets the unbanked and
+  underbanked migrant population with low-cost digital money transfer and mobile financial
+  services. As of this profile MyCash publishes a consumer mobile application and marketing
+  site (inremit.co) but exposes no public developer API, OpenAPI specification, SDKs, or
+  developer portal; this API Evangelist profile records the company's public web and security
+  posture.
 url: https://raw.githubusercontent.com/api-evangelist/mycash/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Remittance
+- Payments
+- Money Transfer
+- Fintech
+- Financial Services
+- Mobile
+- Cross-Border Payments
+- Singapore
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/mycash-domain-security.yml
 - type: Website
   url: https://inremit.co
+- type: TermsOfService
+  url: https://inremit.co/terms-condition
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
