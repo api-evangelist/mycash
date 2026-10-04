@@ -48,7 +48,7 @@ tags:
 - Payments
 - Money Transfer
 - Fintech
-- Financial-Services
+- Financial Services
 - Mobile
 - Cross-Border Payments
 - Singapore
@@ -62,6 +62,7 @@ tags_raw:
 - Mobile
 - Cross-Border Payments
 - Singapore
+- Financial-Services
 apis: []
 maintainers:
 - FN: Kin Lane
